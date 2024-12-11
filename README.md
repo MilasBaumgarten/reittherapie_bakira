@@ -2,6 +2,12 @@
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.2.
 
+## Seite hinzufügen
+1. kopiere eine bestehende Seite (der ganze Ordner) in `src/app/pages/`
+2. benenne die neue Seite um zu dem gewünschten Namen (Ordner und alle Vorkommnisse des Namens in den Dateien muss geändert werden)
+3. füge die neue Adresse in `src/app/app.routes.ts` hinzu
+4. verlinke zu der Seite entweder von einer anderen Seite aus oder von der Kopf- / Fußleiste (`src/app/app.`)
+
 ## Development server
 
 To start a local development server, run:
@@ -18,12 +24,6 @@ Angular CLI includes powerful code scaffolding tools. To generate a new componen
 
 ```bash
 ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
 ```
 
 ## Building
@@ -53,7 +53,3 @@ ng e2e
 ```
 
 Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
