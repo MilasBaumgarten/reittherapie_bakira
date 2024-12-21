@@ -9,6 +9,19 @@ export class PasswordServiceService {
 
   verifyPassword(password: string): boolean {
     const hashedInputPassword = CryptoJS.SHA256(password).toString();
-    return this.hashedPassword == hashedInputPassword;
+    const isValid = this.hashedPassword === hashedInputPassword;
+
+    if (isValid) {
+      localStorage.setItem('isAuthenticated', 'true');
+    }
+    return isValid;
+  }
+
+  isAuthenticated(): boolean {
+    return localStorage.getItem('isAuthenticated') === 'true';
+  }
+
+  logout(): void {
+    localStorage.removeItem('isAuthenticated');
   }
 }

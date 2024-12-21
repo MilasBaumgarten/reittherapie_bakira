@@ -6,7 +6,11 @@ export const passwordGuard: CanActivateFn = (route, state) => {
   const passwordService = inject(PasswordServiceService);
   const router = inject(Router);
 
-  const enteredPassword = prompt('Please enter the password');
+  if (passwordService.isAuthenticated()) {
+    return true;
+  }
+
+  const enteredPassword = prompt('Bitte geben Sie das Passwort ein um diese Seite zu sehen:');
   if (enteredPassword && passwordService.verifyPassword(enteredPassword)) {
     return true;
   } else {
