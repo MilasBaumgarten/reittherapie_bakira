@@ -1,12 +1,11 @@
 <main class="main">
   <nav>
     <ul>
-      <li><a routerLink="/" routerLinkActive="active" ariaCurrentWhenActive="page">Reittherapie</a></li>
+      <li><a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" ariaCurrentWhenActive="page">Reittherapie</a></li>
       <li><a routerLink="/leistungen" routerLinkActive="active" ariaCurrentWhenActive="page">Leistungen</a></li>
       <li><a routerLink="/about" routerLinkActive="active" ariaCurrentWhenActive="page">Über mich</a></li>
       <li><a routerLink="/tierische-therapeuten" routerLinkActive="active" ariaCurrentWhenActive="page">Tierische Therapeuten</a></li>
-      <li><a routerLink="/contact" routerLinkActive="active" ariaCurrentWhenActive="page">Kontakt</a></li>
-    </ul> 
+    </ul>
   </nav>
 
   <!-- Banner -->
@@ -30,5 +29,3 @@
     </ul>
   </footer>
 </main>
-
-<router-outlet />

@@ -1,14 +1,11 @@
-/* Navigation Bar*/
+/* general navigation bar styling */
 ul {
+    display: flex;
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
     background-color: #333;
-}
-
-li {
-    float: left;
+    width: 100%;
 }
 
 li a {
@@ -28,10 +25,29 @@ li a:hover {
     background-color: #04AA6D;
 }
 
-/* layout */
+/* Navigation Bar*/
+nav {
+    position: sticky;
+    top: 0;
+    display: flex;
+}
+
+nav ul {
+    justify-content: flex-end;
+}
+
+/* footer styling */
 footer {
-    position:fixed;
-    bottom:0;
+    display: flex;
+}
+
+footer ul {
+    justify-content: space-around;
+}
+
+footer li {
+    flex: 1;
+    text-align: center;
 }
 
 /* Banner image*/
@@ -40,4 +56,5 @@ footer {
     background-image: url(https://picsum.photos/300);
     height: 200px;
     background-position: center;
+    text-align: center;
 }
