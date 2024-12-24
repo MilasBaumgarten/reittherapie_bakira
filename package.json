@@ -19,7 +19,6 @@
     "@angular/platform-browser-dynamic": "^19.0.5",
     "@angular/router": "^19.0.5",
     "aws-amplify": "^6.11.0",
-    "crypto-js": "^4.2.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.15.0"
@@ -30,7 +29,6 @@
     "@angular/compiler-cli": "^19.0.5",
     "@aws-amplify/backend": "^1.11.0",
     "@aws-amplify/backend-cli": "^1.4.5",
-    "@types/crypto-js": "^4.2.2",
     "@types/jasmine": "~5.1.0",
     "aws-cdk": "^2.173.2",
     "aws-cdk-lib": "^2.173.2",
